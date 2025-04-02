@@ -3,6 +3,10 @@
     color: black;
 }
 
+body {
+    background-color: #B5E0E7;
+}
+
 h1 {
     font-size: 2em;
     font-weight: bold;
