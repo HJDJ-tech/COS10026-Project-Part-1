@@ -1,3 +1,46 @@
+<<<<<<< HEAD
 #job_list {
     display: flex;
+=======
+* {
+    font-family: arial;
+    color: black;
+}
+
+body {
+    background-color: #B5E0E7;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: bold;  
+}
+h3 {
+    font-size: 1.25em;
+    font-weight: bold; 
+}
+
+.menu {
+    display: inline-block;
+}
+
+nav ul {
+    list-style: none;
+}
+
+
+footer {
+    border-top: 4px double black;
+    clear: both;
+}
+
+footer p {
+    display: inline-block;
+    width: 33%;
+>>>>>>> 24fd02f524fff1657c8e097eefc95f4ec6d4dbfb
 }
