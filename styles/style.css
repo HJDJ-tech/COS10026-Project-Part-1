@@ -44,7 +44,7 @@ footer {
 
 /* Assign the <ul> in <nav> to 'navigation' class */
 /* Remove bullet-point, indentation and display everything inline */
-.navigation {
+.menu {
     list-style-type: none;
     padding: 0px;
     display: inline-flex;
@@ -53,10 +53,6 @@ footer {
 /* Adds space betweeen the navigation items */
 .navigation li {
     margin-right: 10px;
-}
-
-.menu {
-    display: inline-block;
 }
 
 nav ul {
