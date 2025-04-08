@@ -1,101 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="description" content="Demonstrates CSS layout" />
-  <meta name="keywords" content="HTML5, CSS layout" />
-  <meta name="author" content="A Lecturer"  />
-  <title>Assignment 1</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HJDJ Solutions</title>
+        <link rel="stylesheet" href="/styles/style.css">
+    </head>
+    
+    <body>
+        <header>
+            <h1>HJDJ</h1>
+            <!-- Site navigation -->
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="jobs.html">Jobs</a></li>
+                    <li><a href="apply.html">Apply</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </header>
 
-  <link href="/styles/style.css" rel="stylesheet">
-</head>
+        <main>
 
-<body>
-   <header>
-		<h1>HJDJ</h1>
-    </header> 
-	<nav>
-    <p class="menu"><a href="index.html">Home</a></p> 
-		<p class="menu"><a href="jobs.html">Jobs</a> </p> 
-		<p class="menu"><a href="apply.html">Apply</a></p> 
-		<p class="menu"><a href="about.html">About</a></p> 
-    </nav>
+          <h1>About Our Team</h1>
+          <!--First section to display information about our team-->
+          <section>
+            <h2>HJDJ</h2>
+            <ul>
+              <li>Our Class is 2:30-4:30pm on Wednesday and our Tutor is Rahul</li>
+              <dl>
+              <li>Member 1: Harry Lamb Student ID: 104617909</li>
+                <dt>Harry's Contribution:</dt>
+                <dd>About Page</dd>
+              <li>Member 2: Josh Trapman Student ID: 105919871</li>
+                <dt>Josh's Contribution:</dt>
+                <dd>Jobs Page</dd>
+              <li>Member 3: Diesel Williams Student ID: 105925975</li>
+                <dt>Diesel's Contribution:</dt>
+                <dd>Apply Page</dd>
+              <li>Member 4: Jerry Nguyen Student ID: 105075045</li>
+                <dt>Jerry's Contribution:</dt>
+                <dd>Home Page</dd>
+            </ul></dl>
+            <br>
+          </section>
+          <!--Team photo-->
+          <section>
+            <img src="" alt="Photo of HJDJ Group">
+            <br>
+          </section>
 
-    <h1>About Our Team</h1>
-
-    <section>
-      <h2>HJDJ</h2>
-      <ul>
-        <li>Our Class is 2:30-4:30pm on Wednesday and our Tutor is Rahul</li>
-        <dl>
-        <li>Member 1: Harry Lamb Student ID: 104617909</li>
-          <dt>Harry's Contribution:</dt>
-          <dd>About Page</dd>
-        <li>Member 2: Josh Trapman Student ID: 105919871</li>
-          <dt>Josh's Contribution:</dt>
-          <dd>Jobs Page</dd>
-        <li>Member 3: Diesel Williams Student ID: 105925975</li>
-          <dt>Diesel's Contribution:</dt>
-          <dd>Apply Page</dd>
-        <li>Member 4: Jerry Nguyen Student ID: 105075045</li>
-          <dt>Jerry's Contribution:</dt>
-          <dd>Home Page</dd>
-      </ul></dl>
-      <br>
-    </section>
-
-    <section>
-      <img src="" alt="Photo of HJDJ Group">
-      <br>
-    </section>
-
-    <section>
-      <table>
-        <caption>Members Interests</caption>
-        <thead>
-          <tr>
-            <th scope="col">Members</th>
-            <th scope="col">Interests</th>
-            <th scope="col">Hometown</th>
-            <th scope="col">Favourite Game</th>
-            <th scope="col">Programming Skills</th>
-            <th scope="col">Work Experience</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">Harry Lamb</th>
-            <td>Gaming and Football</td>
-            <td>I'm from Christchurch in New Zealand. It's a small city that is known for earthquakes.</td>
-            <td>Counter-Strike 2</td>
-            <td>1 Year of Unreal Engine and 6 Months of HTML/CSS</td>
-            <td>Casual Job at Okko NZ packaging camera lenses</td>
-          </tr>
-          <tr>
-            <th scope="row">Josh Trapman</th>
-            <td>Rock Climbing and Gaming</td>
-            <td>I'm from Rosebud on the Mornington Peninsula. It's a small suburb with a great community and amazing beaches.</td>
-            <td>Rocket League</td>
-            <td>1 Year of Python and 1 Year of Godot game engine</td>
-            <td>3 Years at KFC</td>
-          </tr>
-          <tr>
-            <th scope="row">Jerry Nguyen</th>
-            <td>Watching TV/Movies and Gaming</td>
-            <td>I'm from Vinh in Viet Nam. It's a small city with a great community and amazing beaches.</td>
-            <td>Counter-Strike 2</td>
-            <td>1 Year of C++ and 3 Months of Python</td>
-            <td>1 Month at Maccas</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
+          <!--Table to display more information about our team-->
+          <section>
+            <table>
+              <caption>Members Interests</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Members</th>
+                  <th scope="col">Interests</th>
+                  <th scope="col">Hometown</th>
+                  <th scope="col">Favourite Game</th>
+                  <th scope="col">Programming Skills</th>
+                  <th scope="col">Work Experience</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Harry Lamb</th>
+                  <td>Gaming and Football</td>
+                  <td>I'm from Christchurch in New Zealand. It's a small city that is known for earthquakes.</td>
+                  <td>Counter-Strike 2</td>
+                  <td>1 Year of Unreal Engine and 6 Months of HTML/CSS</td>
+                  <td>Casual Job at Okko NZ packaging camera lenses</td>
+                </tr>
+                <tr>
+                  <th scope="row">Josh Trapman</th>
+                  <td>Rock Climbing and Gaming</td>
+                  <td>I'm from Rosebud on the Mornington Peninsula. It's a small suburb with a great community and amazing beaches.</td>
+                  <td>Rocket League</td>
+                  <td>1 Year of Python and 1 Year of Godot game engine</td>
+                  <td>3 Years at KFC</td>
+                </tr>
+                <tr>
+                  <th scope="row">Jerry Nguyen</th>
+                  <td>Watching TV/Movies and Gaming</td>
+                  <td>I'm from Vinh in Viet Nam. It's a small city with a great community and amazing beaches.</td>
+                  <td>Counter-Strike 2</td>
+                  <td>1 Year of C++ and 3 Months of Python</td>
+                  <td>1 Month at Maccas</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
 
 
-
-	<footer>
-		<p>Jira Link</p>
-	</footer>
+        <!--Footer with Jira link-->
+        <footer>
+          <a href="https://hjdj2025swin.atlassian.net/jira/software/projects/SCRUM/boards/1/backlog?atlOrigin=eyJpIjoiNTNmYmIyMzMyZDlhNGJhNzllODI0YTMyNmJkMWEzNDEiLCJwIjoiaiJ9">
+            Jira Project
+          </a>
+        </footer>
+    </main>
 </body>
 
 </html>
