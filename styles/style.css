@@ -47,6 +47,7 @@ footer {
 .menu {
     list-style-type: none;
     padding: 0px;
+    margin: 0px;
     display: inline-flex;
 }
 
@@ -65,3 +66,15 @@ footer p {
     width: 33%;
 }
 
+#job_aside {
+    float: right;
+    margin-right: 30px;
+    width: 30%;
+}
+
+#job_list {
+    margin-right: 10px;
+    margin-left: 30px;
+    width: 60%;
+    clear: left;
+}
