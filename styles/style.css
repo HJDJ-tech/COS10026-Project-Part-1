@@ -1,12 +1,15 @@
+/* Set Default font for all text */
 * {
     font-family: arial;
     color: black;
 }
 
+/* Set the background colour for each page */
 body {
     background-color: #B5E0E7;
 }
 
+/* Format all header options */
 h1 {
     font-size: 2em;
     font-weight: bold;
@@ -16,9 +19,40 @@ h2 {
     font-size: 1.5em;
     font-weight: bold;  
 }
+
 h3 {
     font-size: 1.25em;
     font-weight: bold; 
+}
+
+h4 {
+    font-size: 1.1em;
+    font-weight: bold; 
+}
+/* End of header formatting */
+
+/* Align the header in the center (should include navigation) */
+header {
+    justify-items: center;
+}
+
+/* Footer with double horizontal line */
+footer {
+    border-top: 4px double black;
+    clear: both;
+}
+
+/* Assign the <ul> in <nav> to 'navigation' class */
+/* Remove bullet-point, indentation and display everything inline */
+.navigation {
+    list-style-type: none;
+    padding: 0px;
+    display: inline-flex;
+}
+
+/* Adds space betweeen the navigation items */
+.navigation li {
+    margin-right: 10px;
 }
 
 .menu {
@@ -29,13 +63,8 @@ nav ul {
     list-style: none;
 }
 
-
-footer {
-    border-top: 4px double black;
-    clear: both;
-}
-
 footer p {
     display: inline-block;
     width: 33%;
 }
+
