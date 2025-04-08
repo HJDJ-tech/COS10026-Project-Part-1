@@ -51,8 +51,9 @@ footer {
 }
 
 /* Adds space betweeen the navigation items */
-.navigation li {
+.menu li a {
     margin-right: 10px;
+    text-decoration: none;
 }
 
 nav ul {
