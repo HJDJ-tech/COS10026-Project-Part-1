@@ -1,1 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Demonstrates some basic HTML content elements and CSS" />
+  <meta name="keywords" content="HTML5, tags" />
+  <meta name="author" content="A Lecturer"  />
+  <title>Job Application</title>
+  
+  <link rel="stylesheet" type="text/css" href="Apply.css">
 
+</head>
+
+<body>
+<a href="Applynow.jpg.png">  <img src="Applynow.jpg.png" alt="Photo of Applynow" /></a>
+
+
+    <form method="post" action="http://mercury.swin.edu.au/it000000/jobapplication.php">
+        <!--Note we have to use a special escape character to print an apostrophe on the Web page -->
+        <fieldset>
+        <legend>Full Name</legend>
+        <p><label for="given">Given Name</label> 
+            <!--Use an HTML5 email control -->
+          <input type="text" name= "given" id="given" maxlength="20"/>
+        </p>
+        <p><label for="family">Family Name</label> 
+            <!--Use an HTML5 email control -->
+          <input type="text" name= "family" id="family" maxlength="20"/>
+        </p>
+        </fieldset>
+        <fieldset>
+            <legend>Gender</legend>
+            <p><label for="Male">Male</label> 
+                <input type="radio" id="Male" name="Gender" value="Male"/>
+            </p>
+            <p><label for="Female">Female</label> 
+                <input type="radio" id="Female" name="Gender" value="Female"/>
+            </p>
+            <p><label for="Other">Other</label> 
+                <input type="radio" id="Other" name="Gender" value="Other"/>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Job Listing</legend>
+            <p><label for="referencenumber">Job refernce number</label> 
+                <select name="referencenumber" id="referencenumber">
+                    <option value="WC-R-1398-03-06-S">WC-R-1398-03-06-S</option>			
+                    <option value="LS-L-1976-04-09-V">LS-L-1976-04-09-V</option>
+                    <option value="UY-E-1785-04-10-R">UY-E-1785-04-10-R</option>
+                    <option value="TP-K-1294-05-09-F">TP-K-1294-05-09-F</option>
+                    <option value="MN-L-1190-05-10-E">MN-L-1190-05-10-E</option>
+                </select>
+            </p>
+        </fieldset>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
