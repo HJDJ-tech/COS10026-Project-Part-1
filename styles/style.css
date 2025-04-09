@@ -70,6 +70,20 @@ footer p {
     width: 33%;
 }
 
+/* Table styling */
+table, th, td { 
+    border: 1px solid black;
+    text-align: center;
+}
+
+td, th {
+    background-color: #e0fbff;
+}
+
+/*Figure team photo styling */
+#team_photo {
+    float: right;
+}
 
 /* STYLING FOR JOBS PAGE */
 
