@@ -52,20 +52,85 @@
                 </select>
             </p>
         </fieldset>
+
+        <fieldset>
+            <legend>Availability</legend>
+            <p><label for="availability">Availability</label> 
+                <select name="availability" id="availability">
+                    <option value="Full-time">Full-time</option>			
+                    <option value="Part-time">Part-time</option>
+                    <option value="Casual">Casual</option>
+                </select>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Work Rights</legend>
+            <p><label for="workrights">Work Rights</label> 
+                <select name="workrights" id="workrights">
+                    <option value="Citizen">Citizen</option>			
+                    <option value="Permanent Resident">Permanent Resident</option>
+                    <option value="Temporary Visa">Temporary Visa</option>
+                </select>
+            </p>
+        </fieldset>
+
+        <fieldset>
+        <legend>Dat of Birth</legend>
+        <p><label for="d">Date</label> 
+            <input type="date" name= "d" id="d" placeholder="dd-mm-yyyy" maxlength="10" size="10"/>
+        </fieldset>
+
+        <fieldset>
+            <legend>Location</legend>
+            <p><label for="Address">Street Address</label> 
+                <!--Use an HTML5 email control -->
+              <input type="text" name= "Adress" id="Address" maxlength="40"/>
+            </p>
+            <p><label for="suburb">Suburb/Town</label> 
+                <!--Use an HTML5 email control -->
+              <input type="text" name= "suburb" id="suburb" maxlength="40"/>
+            </p>
+            </fieldset>
+            <fieldset>
+                <legend>State</legend>
+                <p><label for="state">State</label> 
+                    <select name="state" id="state">
+                        <option value="VIC">VIC</option>			
+                        <option value="NSW">NSW</option>
+                        <option value="QLD">QLD</option>
+                        <option value="SA">SA</option>
+                        <option value="WA">WA</option>
+                        <option value="TAS">TAS</option>
+                        <option value="NT">NT</option>
+                        <option value="ACT">ACT</option>
+                    </select>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Postcode</legend>
+                <p><label for="postcode">Postcode</label> 
+                    <!--Use an HTML5 email control -->
+                  <input type="text" name= "postcode" id="postcode" maxlength="4"/>
+                </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Contact Details</legend>
+                    <p><label for="email">Email</label> 
+                        <!--Use an HTML5 email control -->
+                      <input type="email" name= "email" id="email" maxlength="40"/>
+                    </p>
+                    <p><label for="phone">Phone Number</label> 
+                        <!--Use an HTML5 email control -->
+                      <input type="tel" name= "phone" id="phone" maxlength="10"/>
+                    </p>
+                    </fieldset>
+      
+    <input type= "submit" value="Register"/>
+    <input type= "reset" value="Reset Form"/>
     
-
-
-
-
-
-
-
-
-
-
-
-
-
+    </form>
+    
 
 </body>
 </html>
