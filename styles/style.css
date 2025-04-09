@@ -66,15 +66,57 @@ footer p {
     width: 33%;
 }
 
+
+/* STYLING FOR JOBS PAGE */
+
 #job_aside {
     float: right;
     margin-right: 30px;
+    padding: 0px 10px 0px 10px;
     width: 30%;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #e0fbff;
 }
 
 #job_list {
-    margin-right: 10px;
-    margin-left: 30px;
+    margin: 30px 10px 30px 30px;
     width: 60%;
-    clear: left;
+}
+
+.job_position {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 15px 10px 15px;
+    margin: 0px 0px 25px 0px;
+    min-width: 30em;
+    border: 1.5px solid black;
+    border-radius: 10px;
+    background-color: #e0fbff;
+}
+
+/* Format <a> tag to look like a button */
+.job_apply_button {
+    display: flex;
+    text-decoration: none;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    background-color: #ce0505;
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 3em;
+    width: 8em;
+    color: white;
+    float: right;
+
+}
+
+.job_apply_button:hover {
+    background-color: #b51111;
+    cursor: pointer;
+}
+
+.job_apply_button:active {
+    background-color: #ce0505;
 }
