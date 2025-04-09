@@ -7,6 +7,7 @@
 /* Set the background colour for each page */
 body {
     background-color: #B5E0E7;
+    margin: 0;
 }
 
 /* Format all header options */
@@ -43,6 +44,7 @@ header {
 /* Footer with double horizontal line */
 footer {
     border-top: 4px double black;
+    text-align: center;
     clear: both;
 }
 
@@ -72,11 +74,10 @@ footer p {
 
 
 /* STYLING FOR JOBS PAGE */
-
+/* Aside element floated to the right */
 #job_aside {
-    position: fixed 10px;
     float: right;
-    margin-right: 2em;
+    margin: 1em 3em;
     padding: 0 0.5em;
     width: 25%;
     min-width: 16em;
@@ -84,12 +85,14 @@ footer p {
     border-radius: 10px;
 }
 
+/* Contains all job position sections */
 #job_list {
-    margin: 4em 1em 4em 2em;
-    width: 60%;
-    min-width: 30em;
+    margin: 2em 1em 4em 3em;
+    width: 20%;
+    min-width: 50em;
 }
 
+/* Section for each different job position */
 .job_position {
     padding: 0 1em 1em;
     margin-bottom: 2em;
@@ -112,15 +115,18 @@ footer p {
     color: white;
 }
 
+/* Change colour of button on hover */
 .job_apply_button:hover {
     background-color: #b51111;
     cursor: pointer;
 }
 
+/* Change colour of button on click */
 .job_apply_button:active {
     background-color: #ce0505;
 }
 
+/* Defines sections that should have a different background colour */
 .content_section {
     background-color: #e0fbff;
 }
