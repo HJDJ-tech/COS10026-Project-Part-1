@@ -32,13 +32,15 @@ h4 {
 }
 /* End of header formatting */
 
-/* Align the header in the center (should include navigation) */
 header {
-    margin: 1em 2em;
-    padding-bottom: 1em;
-    justify-items: center;
-    border: 2px solid black;
-    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+
+#logo {
+    height: 3em;
+    margin: 0 1em 0 3em;
 }
 
 /* Footer with double horizontal line */
@@ -76,8 +78,9 @@ footer p {
 /* STYLING FOR JOBS PAGE */
 /* Aside element floated to the right */
 #job_aside {
+    display: block;
     float: right;
-    margin: 1em 3em;
+    margin: 0 3em;
     padding: 0 0.5em;
     width: 25%;
     min-width: 16em;
@@ -85,17 +88,22 @@ footer p {
     border-radius: 10px;
 }
 
+#aside_img {
+    height: 10em;
+}
+
 /* Contains all job position sections */
 #job_list {
     margin: 2em 1em 4em 3em;
-    width: 20%;
-    min-width: 50em;
+    width: 100%;
 }
 
 /* Section for each different job position */
 .job_position {
     padding: 0 1em 1em;
     margin-bottom: 2em;
+    width: 60%;
+    min-width: 30em;
     border: 1.5px solid black;
     border-radius: 10px;
 }
