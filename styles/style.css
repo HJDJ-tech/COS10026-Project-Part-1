@@ -33,7 +33,11 @@ h4 {
 
 /* Align the header in the center (should include navigation) */
 header {
+    margin: 1em 2em;
+    padding-bottom: 1em;
     justify-items: center;
+    border: 2px solid black;
+    border-radius: 20px;
 }
 
 /* Footer with double horizontal line */
@@ -47,6 +51,7 @@ footer {
 .menu {
     list-style-type: none;
     padding: 0px;
+    margin: 0px;
     display: inline-flex;
 }
 
@@ -65,3 +70,57 @@ footer p {
     width: 33%;
 }
 
+
+/* STYLING FOR JOBS PAGE */
+
+#job_aside {
+    position: fixed 10px;
+    float: right;
+    margin-right: 2em;
+    padding: 0 0.5em;
+    width: 25%;
+    min-width: 16em;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#job_list {
+    margin: 4em 1em 4em 2em;
+    width: 60%;
+    min-width: 30em;
+}
+
+.job_position {
+    padding: 0 1em 1em;
+    margin-bottom: 2em;
+    border: 1.5px solid black;
+    border-radius: 10px;
+}
+
+/* Format <a> tag to look like a button */
+.job_apply_button {
+    display: flex;
+    text-decoration: none;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    background-color: #ce0505;
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 3em;
+    width: 8em;
+    color: white;
+}
+
+.job_apply_button:hover {
+    background-color: #b51111;
+    cursor: pointer;
+}
+
+.job_apply_button:active {
+    background-color: #ce0505;
+}
+
+.content_section {
+    background-color: #e0fbff;
+}
