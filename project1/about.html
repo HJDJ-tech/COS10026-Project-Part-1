@@ -8,18 +8,21 @@
     </head>
     
     <body>
-        <header>
-            <h1>HJDJ</h1>
-            <!-- Site navigation -->
-            <nav>
-                <ul class="menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="jobs.html">Jobs</a></li>
-                    <li><a href="apply.html">Apply</a></li>
-                    <li><a href="about.html">About</a></li>
-                </ul>
-            </nav>
-        </header>
+    <!-- div header -->
+    <div class="header">
+      <div class="logo-container">
+          <img src="/images/image.png" alt="HJDJ Logo" />
+      </div>
+      <!-- Site navigation -->
+      <nav>
+          <ul class="menu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="jobs.html">Jobs</a></li>
+              <li><a href="apply.html">Apply</a></li>
+              <li><a href="about.html">About</a></li>
+          </ul>
+      </nav>
+    </div>
 
         <main>
 
@@ -37,7 +40,6 @@
               <li class="white_text">Member 3: Diesel Williams Student ID: 105925975</li>
 
               <li class="white_text">Member 4: Jerry Nguyen Student ID: 105075045</li>
-
             </ul>
             <br>
           </section>
@@ -47,19 +49,19 @@
           <section id="grey_section">
             <!--Team photo-->
             <figure id="team_photo">
-              <img id="team_image" src="/picture/HJDJ_team_photo.jpg" alt="Photo of HJDJ Group">
+              <img id="team_image" src="/images/HJDJ_team_photo.jpg" alt="Photo of HJDJ Group">
             </figure>
             <h2>Member Contribution</h2>
-            <dl>
-              <dt>Harry's Contribution:</dt>
-              <dd>About Page</dd>
-              <dt>Josh's Contribution:</dt>
-              <dd>Jobs Page, Navigation Bar and Footer</dd>
-              <dt>Diesel's Contribution:</dt>
-              <dd>Apply Page</dd>
-              <dt>Jerry's Contribution:</dt>
-              <dd>Home Page</dd>
-            </dl>
+              <dl>
+                <dt>Harry's Contribution:</dt>
+                <dd>About Page</dd>
+                <dt>Josh's Contribution:</dt>
+                <dd>Jobs Page and Navigation Bar</dd>
+                <dt>Diesel's Contribution:</dt>
+                <dd>Apply Page</dd>
+                <dt>Jerry's Contribution:</dt>
+                <dd>Home Page and Footer</dd>
+              </dl>
           </section>
 
           <!--Table to display more information about our team-->
@@ -116,11 +118,52 @@
 
 
         <!--Footer with Jira link-->
-        <footer>
-          <a href="https://hjdj2025swin.atlassian.net/jira/software/projects/SCRUM/boards/1/backlog?atlOrigin=eyJpIjoiNTNmYmIyMzMyZDlhNGJhNzllODI0YTMyNmJkMWEzNDEiLCJwIjoiaiJ9">
-            Jira Project
-          </a>
-        </footer>
+        <div class="footer">
+          <!-- Jira link-->
+          <div class="logofooter">
+              <img src="/images/image1.jpg" alt="HJDJ Logo"/>
+          </div>
+    
+          <div class="objfooter">
+              <h3>Contact</h3>
+              <div class="link">
+                  <a href="https://hjdj2025swin.atlassian.net/jira/software/projects/SCRUM/boards/1/backlog?atlOrigin=eyJpIjoiNTNmYmIyMzMyZDlhNGJhNzllODI0YTMyNmJkMWEzNDEiLCJwIjoiaiJ9">Jira Project</a>
+              </div>
+              <div class="email">
+                  <p>Email:</p>
+                  <a href="mailto:someone@example.com">HJDJcarrier@hjdj.com.au</a>
+              </div>
+              <div class="megaphonetelephone">
+                  <p>Tel: 408-486-1405</p>
+              </div>
+          </div>
+          
+          <div class="objfooter">
+              <h3>Company</h3>
+              <div class="link">
+                  <p>About us</p>
+              </div>
+              <div class="email">
+                  <p>Event</p>
+              </div>
+              <div class="megaphonetelephone">
+                  <p>Terms and conditions</p>
+              </div>
+          </div>
+
+          <div class="objfooter">
+              <h3>Follow Us</h3>
+              <div class="link">
+                  <p>Facebook</p>
+              </div>
+              <div class="email">
+                  <p>Instagram</p>
+              </div>
+              <div class="megaphonetelephone">
+                  <p>Twitter</p>
+              </div>
+          </div>
+      </div>
     </main>
 </body>
 
