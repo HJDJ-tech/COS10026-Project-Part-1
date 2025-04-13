@@ -318,8 +318,8 @@ td:hover {
 #team_photo {  
     float: right;
     border: 2px solid black;
-    width: 300px;
-    height: 200px;
+    width: 20%;
+    height: 20%;
 }
   
 figure {
@@ -327,19 +327,20 @@ figure {
 }
   
 #team_image {
+    float: right;
     width: 100%;
     height: 100%;
-    float: right;
 }
   
-/* Section styling */
+/* Section styling for about.html */
 #black_section {
-    background-color: black;
+    background-color: #1e1e1e;
     padding: 2em;
     text-align: right;
 }
   
 #grey_section {
+    align-content: center;
     background-color: lightgrey;
     padding: 2em;
     text-align: left;
@@ -352,9 +353,22 @@ figure {
 #white_section {
     background-color: white;
     padding: 2em;
+    align-content: center;
 }
-  
+
+/* Nested list for about page styling */
 #about_info { list-style-type: none; }
+
+/* Definition list styling */
+dl {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+dd {
+    margin-left: 1em;
+    margin-bottom: 1.5em;
+}
   
   
 /* STYLING FOR JOBS PAGE */
