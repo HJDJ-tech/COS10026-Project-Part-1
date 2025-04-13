@@ -3,7 +3,10 @@
     font-family: sans-serif;
     color: black;
 }
-
+.text-center {
+  text-align: center;
+  align-content: center;
+}
 /* Set the background colour for each page */
 body {
     background-color: white;
@@ -12,23 +15,23 @@ body {
 
 /* Format all header options */
 h1 {
-    font-size: 2em;
-    font-weight: bold;
+  font-size: 2em;
+  font-weight: bold;
 }
 
 h2 {
-    font-size: 1.5em;
-    font-weight: bold;  
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
 h3 {
-    font-size: 1.25em;
-    font-weight: bold; 
+  font-size: 1.25em;
+  font-weight: bold;
 }
 
 h4 {
-    font-size: 1.1em;
-    font-weight: bold; 
+  font-size: 1.1em;
+  font-weight: bold;
 }
 /* End of header formatting */
 
@@ -86,20 +89,23 @@ nav {
 }
 
 footer p {
-    display: inline-block;
-    width: 33%;
+  display: inline-block;
+  width: 33%;
 }
 
 /* STYLING FOR ABOUT PAGE */
 
 /* Table styling */
-table, th, td { 
-    border: 1px solid black;
-    text-align: center;
+table,
+th,
+td {
+  border: 1px solid black;
+  text-align: center;
 }
 
-td, th {
-    background-color: #e0fbff;
+td,
+th {
+  background-color: #e0fbff;
 }
 
 td:hover {
@@ -109,10 +115,13 @@ td:hover {
 
 /*Figure team photo styling */
 #team_photo {
+
+
     float: right;
     border: 2px solid black;
     width: 300px;
     height: 200px;
+
 }
 
 figure {
@@ -274,7 +283,7 @@ figure {
 
 /* Change colour of button on click */
 .job_apply_button:active {
-    background-color: #ce0505;
+  background-color: #ce0505;
 }
 
 .center_heading {
