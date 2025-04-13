@@ -1,12 +1,12 @@
 /* Set Default font for all text */
 * {
-    font-family: arial;
+    font-family: sans-serif;
     color: black;
 }
 
 /* Set the background colour for each page */
 body {
-    background-color: #B5E0E7;
+    background-color: white;
     margin: 0;
 }
 
@@ -34,12 +34,12 @@ h4 {
 
 header {
     display: flex;
-    align-items: center;
-    background-color: white;
+    height: 3em;
+    background-color: #dddddd;
 }
 
 #logo {
-    height: 3em;
+    height: 100%;
     margin: 0 1em 0 3em;
 }
 
@@ -50,23 +50,39 @@ footer {
     clear: both;
 }
 
+nav {
+    height: 100%;
+}
+
 /* Assign the <ul> in <nav> to 'navigation' class */
 /* Remove bullet-point, indentation and display everything inline */
 .menu {
+    display: flex;
+    height: 100%;
     list-style-type: none;
     padding: 0px;
     margin: 0px;
-    display: inline-flex;
 }
 
 /* Adds space betweeen the navigation items */
+.menu li {
+    align-content: center;
+    height: 100%;
+    width: 4em;
+    text-align: center;
+    padding: 0;
+}
+
 .menu li a {
-    margin-right: 10px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
 }
 
-nav ul {
-    list-style: none;
+.menu li a:hover {
+    background-color: #bbbbbb;
 }
 
 footer p {
@@ -76,20 +92,46 @@ footer p {
 
 
 /* STYLING FOR JOBS PAGE */
-/* Aside element floated to the right */
-#job_aside {
-    display: block;
-    float: right;
-    margin: 0 3em;
-    padding: 0 0.5em;
-    width: 25%;
-    min-width: 16em;
-    border: 2px solid black;
-    border-radius: 10px;
+#job_nav {
+    box-shadow: inset 0 -2px 0 black;
 }
 
-#aside_img {
-    height: 10em;
+.black_content_section {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    min-height: 400px;
+    height: fit-content;
+    width: 100%;
+}
+
+/* Aside element floated to the right */
+#job_aside {
+    float: right;
+    border: 2px solid white;
+    border-radius: 20px;
+    width: 25%;
+    min-width: fit-content;
+    margin: 0 3%;
+    padding: 0 2em;
+}
+
+#sd {
+    margin-left: 100px;
+    width: 50%;
+}
+
+.white_text {
+    color: white;
+}
+
+#aside_list li {
+    margin-bottom: 10px;
+}
+
+#workers1_img {
+    width: 50%;
+    height: 50%;
 }
 
 /* Contains all job position sections */
@@ -126,15 +168,9 @@ footer p {
 /* Change colour of button on hover */
 .job_apply_button:hover {
     background-color: #b51111;
-    cursor: pointer;
 }
 
 /* Change colour of button on click */
 .job_apply_button:active {
     background-color: #ce0505;
-}
-
-/* Defines sections that should have a different background colour */
-.content_section {
-    background-color: #e0fbff;
 }

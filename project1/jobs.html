@@ -12,9 +12,9 @@
             <img src="/picture/hjdj_logo.png" alt="HJDJ Logo" id="logo">
             <!-- Site navigation -->
             <nav>
-                <ul class="menu">
+                <ul class="menu" id="job_menu">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="jobs.html">Jobs</a></li>
+                    <li><a href="jobs.html" id="job_nav">Jobs</a></li>
                     <li><a href="apply.html">Apply</a></li>
                     <li><a href="about.html">About</a></li>
                 </ul>
@@ -23,21 +23,26 @@
         
         <main>
             <!-- Reasons to work for HJDJ -->
-            <img src="/picture/happy_workers.png" alt="Happy Workers" id="aside_img">
-            <aside class="content_section" id="job_aside">
-                <h4>5 reasons why should you work with us:</h4>
-                <ol>
-                    <li>Flexible work environments and remote opportunities</li>
-                    <li>Comprehensive health insurance</li>
-                    <li>Paid certification and training programs</li>
-                    <li>Retirement savings plan</li>
-                    <li>Wellness initiatives and team retreats</li>
-                </ol>
-            </aside>
+            <section class="black_content_section">
+                <img src="/picture/workers1.png" alt="Workers" id="workers1_img">
+                <section id="sd">
+                    <aside id="job_aside">
+                        <h4 class="white_text">5 reasons why should you work with us:</h4>
+                        <ol id="aside_list">
+                            <li class="white_text">Flexible work environments and remote opportunities</li>
+                            <li class="white_text">Comprehensive health insurance</li>
+                            <li class="white_text">Paid certification and training programs</li>
+                            <li class="white_text">Retirement savings plan</li>
+                            <li class="white_text">Wellness initiatives and team retreats</li>
+                        </ol>
+                    </aside>
+                </section>
+            </section>
+
             <section id="job_list">  
             
                 <!-- Position: Data Analyst -->
-                <section class="job_position content_section">
+                <section class="job_position">
                     <!-- Job Title -->
                     <h2>Data Analyst</h2>
                     <!-- Used ChatGPT to generate a job description -->
@@ -86,7 +91,7 @@
                 </section>
 
                 <!-- Position: Software Engineer -->
-                <section class="job_position content_section">
+                <section class="job_position">
                     <!-- Job Title -->
                     <h2>Software Engineer</h2>
                     <!-- Used ChatGPT to generate a job description -->
