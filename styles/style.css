@@ -358,8 +358,8 @@ figure {
   
   
 /* STYLING FOR JOBS PAGE */
-#job_nav {
-    box-shadow: inset 0 -3px 0 black;
+.jobs_page_heading {
+    margin: 20px 0;
 }
 
 .black_content_section {
@@ -417,7 +417,7 @@ figure {
     align-items: center;
     margin-bottom: 2em;
     width: 100%;
-    min-width: 30em;
+    min-width: 650px;
 }
 
 .job_title {
@@ -432,7 +432,7 @@ figure {
 
 .job_information {
     display: grid;
-    grid-template-columns: 30% 30% 30%;
+    grid-template-columns: 25% 25% 25%;
     grid-template-rows: 1fr 1fr;
     justify-content: space-evenly;
     margin-top: 20px;
@@ -485,5 +485,4 @@ figure {
 
 .center_heading {
     text-align: center;
-    margin-bottom: 0;
 }
