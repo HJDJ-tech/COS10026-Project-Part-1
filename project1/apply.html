@@ -25,7 +25,6 @@
 </header>
 
 <body>
-<a href="Applynow.jpg.png">  <img src="Applynow.jpg.png" alt="Photo of Applynow" /></a>
 
 
 <form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
@@ -34,29 +33,29 @@
         <legend>Full Name</legend>
         <p><label for="given">Given Name</label> 
             <!--Use an HTML5 email control -->
-          <input type="text" name= "given" id="given" maxlength="20"/>
+          <input type="text" name= "given" id="given" maxlength="20" required/>
         </p>
         <p><label for="family">Family Name</label> 
             <!--Use an HTML5 email control -->
-          <input type="text" name= "family" id="family" maxlength="20"/>
+          <input type="text" name= "family" id="family" maxlength="20" required/>
         </p>
         </fieldset>
         <fieldset>
             <legend>Gender</legend>
             <p><label for="Male">Male</label> 
-                <input type="radio" id="Male" name="Gender" value="Male"/> <!--Allows only one button to be clicked-->
+                <input type="radio" id="Male" name="Gender" value="Male" required/> <!--Allows only one button to be clicked-->
             </p>
             <p><label for="Female">Female</label> 
-                <input type="radio" id="Female" name="Gender" value="Female"/>
+                <input type="radio" id="Female" name="Gender" value="Female" required/>
             </p>
             <p><label for="Other">Other</label> 
-                <input type="radio" id="Other" name="Gender" value="Other"/>
+                <input type="radio" id="Other" name="Gender" value="Other" required/>
             </p>
         </fieldset>
         <fieldset>
             <legend>Job Listing</legend>
             <p><label for="referencenumber">Job refernce number</label> 
-                <select name="referencenumber" id="referencenumber"> <!-- Drop down selection listy-->
+                <select name="referencenumber" id="referencenumber" required> <!-- Drop down selection listy-->
                     <option value="WC-R-1398-03-06-S">WC-R-1398-03-06-S</option>			
                     <option value="LS-L-1976-04-09-V">LS-L-1976-04-09-V</option>
                     <option value="UY-E-1785-04-10-R">UY-E-1785-04-10-R</option>
@@ -69,7 +68,7 @@
         <fieldset>
             <legend>Availability</legend>
             <p><label for="availability">Availability</label> <!-- Drop down selection listy-->
-                <select name="availability" id="availability">
+                <select name="availability" id="availability" required>
                     <option value="Full-time">Full-time</option>			
                     <option value="Part-time">Part-time</option>
                     <option value="Casual">Casual</option>
@@ -79,7 +78,7 @@
         <fieldset>
             <legend>Work Rights</legend>
             <p><label for="workrights">Work Rights</label> 
-                <select name="workrights" id="workrights"> <!-- Drop down selection listy-->
+                <select name="workrights" id="workrights" required> <!-- Drop down selection listy-->
                     <option value="Citizen">Citizen</option>			
                     <option value="Permanent Resident">Permanent Resident</option>
                     <option value="Temporary Visa">Temporary Visa</option>
@@ -90,24 +89,24 @@
         <fieldset>
         <legend>Dat of Birth</legend>
         <p><label for="d">Date</label> 
-            <input type="date" name= "d" id="d" placeholder="dd-mm-yyyy" maxlength="10" size="10"/>
+            <input type="date" name= "d" id="d" placeholder="dd-mm-yyyy" maxlength="10" size="10" required/>
         </fieldset>
 
         <fieldset>
             <legend>Location</legend>
             <p><label for="Address">Street Address</label> 
                 <!--Use an HTML5 email control -->
-              <input type="text" name= "Adress" id="Address" maxlength="40"/>
+              <input type="text" name= "Adress" id="Address" maxlength="40" required/>
             </p>
             <p><label for="suburb">Suburb/Town</label> 
                 <!--Use an HTML5 email control -->
-              <input type="text" name= "suburb" id="suburb" maxlength="40"/>
+              <input type="text" name= "suburb" id="suburb" maxlength="40" required/>
             </p>
             </fieldset>
             <fieldset>
                 <legend>State</legend>
                 <p><label for="state">State</label> 
-                    <select name="state" id="state">
+                    <select name="state" id="state" required> <!-- Drop down selection listy-->
                         <option value="VIC">VIC</option>			
                         <option value="NSW">NSW</option>
                         <option value="QLD">QLD</option>
@@ -124,19 +123,26 @@
                 <legend>Postcode</legend>
                 <p><label for="postcode">Postcode</label> 
                     <!--Use an HTML5 email control -->
-                  <input type="text" name= "postcode" id="postcode" maxlength="4"/> <!--Allows only 4 characters to be input-->
+                  <input type="text" name= "postcode" id="postcode" maxlength="4" required/> <!--Allows only 4 characters to be input-->
                 </p>
                 </fieldset>
                 <fieldset>
                     <legend>Contact Details</legend>
                     <p><label for="email">Email</label> 
                         <!--Use an HTML5 email control -->
-                      <input type="email" name= "email" id="email" maxlength="40"/>
+                      <input type="email" name= "email" id="email" maxlength="40" required/>
                     </p>
                     <p><label for="phone">Phone Number</label> 
                         <!--Use an HTML5 email control -->
-                      <input type="tel" name= "phone" id="phone" maxlength="10"/>
+                      <input type="tel" name= "phone" id="phone" maxlength="10" required/>
                     </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Other Skills</legend>
+                        <p><label for="other">List any other skills you have</label> 
+                            <!--Use an HTML5 email control -->
+                          <input type="text" name= "other" id="other" size="150" maxlength="150"/>
+                        </p>
                     </fieldset>
       
     <input type= "submit" value="Register"/>
