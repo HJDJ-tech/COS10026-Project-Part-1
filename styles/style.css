@@ -7,6 +7,7 @@
 /* Set the background colour for each page */
 body {
     background-color: #B5E0E7;
+    margin: 0px;
 }
 
 /* Format all header options */
@@ -82,18 +83,37 @@ td, th {
     background-color: #e0fbff;
 }
 
+td:hover {
+    color: darkblue;
+    background-color: lightblue;
+}
+
 /*Figure team photo styling */
 #team_photo {
     float: right;
+    border: 2px solid black;
+    width: 300px;
+    height: 200px;
 }
 
-.black_section {
+figure {
+    margin: 0px;
+}
+
+#team_image {
+    width: 100%;
+    height: 100%;
+    float: right;
+}
+
+/* Section styling */
+#black_section {
     background-color: black;
     padding: 2em;
     text-align: right;
 }
 
-.grey_section {
+#grey_section {
     background-color: lightgrey;
     padding: 2em;
     text-align: left;
@@ -103,8 +123,12 @@ td, th {
     color: white;
 }
 
-#about_info { list-style-type: none; }
+#white_section {
+    background-color: white;
+    padding: 2em;
+}
 
+#about_info { list-style-type: none; }
 
 
 
