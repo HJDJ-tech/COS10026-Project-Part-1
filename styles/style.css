@@ -70,6 +70,8 @@ footer p {
     width: 33%;
 }
 
+/* STYLING FOR ABOUT PAGE */
+
 /* Table styling */
 table, th, td { 
     border: 1px solid black;
@@ -84,6 +86,27 @@ td, th {
 #team_photo {
     float: right;
 }
+
+.black_section {
+    background-color: black;
+    padding: 2em;
+    text-align: right;
+}
+
+.grey_section {
+    background-color: lightgrey;
+    padding: 2em;
+    text-align: left;
+}
+
+.white_text {
+    color: white;
+}
+
+#about_info { list-style-type: none; }
+
+
+
 
 /* STYLING FOR JOBS PAGE */
 
