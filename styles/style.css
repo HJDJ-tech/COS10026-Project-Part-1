@@ -380,9 +380,13 @@ dd {
     margin: 20px 0;
 }
 
+.jobs_page_nav {
+    min-width: 650px;
+}
+
 .jobs_page_header {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 50% 45%;
     grid-template-rows: 10% 70%;
     gap: 50px 50px;
     justify-content: left;
@@ -391,6 +395,7 @@ dd {
     min-height: 400px;
     height: fit-content;
     width: 100%;
+    min-width: 650px;
 }
 
 #jobs_page_main_heading {
@@ -405,7 +410,7 @@ dd {
 }
 
 #aside_container {
-    width: 70%;
+    width: 90%;
 }
 
 /* Aside element floated to the right */
@@ -433,7 +438,7 @@ dd {
 /* Contains all job position sections */
 #job_list {
     width: 100%;
-    min-width: 1117.85px;
+    min-width: 650px;
 }
 
 /* Section for each different job position */
