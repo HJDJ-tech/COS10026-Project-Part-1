@@ -11,25 +11,29 @@
 
 </head>
 
-<header>
-    <h1>HJDJ</h1>
-    <!-- Site navigation -->
-    <nav>
-        <ul class="menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="jobs.html">Jobs</a></li>
-            <li><a href="apply.html">Apply</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>
-    </nav>
-</header>
-
 <body>
+    <!-- div header -->
+    <div class="header">
+        <div class="logo-container">
+            <img src="/images/image.png" alt="HJDJ Logo" />
+        </div>
+        <!-- Site navigation -->
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="apply.html">Apply</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </div>
 
+
+<main>
 
 <form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
         <!--Note we have to use a special escape character to print an apostrophe on the Web page -->
-        <fieldset>
+        <fieldset class="job_apply_page grey_content_section">
         <legend>Full Name</legend>
         <p><label for="given">Given Name</label> 
             <!--Use an HTML5 email control -->
@@ -40,7 +44,7 @@
           <input type="text" name= "family" id="family" maxlength="20" required/>
         </p>
         </fieldset>
-        <fieldset>
+        <fieldset class="job_apply_page">
             <legend>Gender</legend>
             <p><label for="Male">Male</label> 
                 <input type="radio" id="Male" name="Gender" value="Male" required/> <!--Allows only one button to be clicked-->
@@ -52,10 +56,11 @@
                 <input type="radio" id="Other" name="Gender" value="Other" required/>
             </p>
         </fieldset>
-        <fieldset>
+        <fieldset class="job_apply_page grey_content_section">
             <legend>Job Listing</legend>
             <p><label for="referencenumber">Job refernce number</label> 
                 <select name="referencenumber" id="referencenumber" required> <!-- Drop down selection listy-->
+                    <option value="">Select an Option</option> <!--Placeholder option must be added when select list is required-->
                     <option value="WC-R-1398-03-06-S">WC-R-1398-03-06-S</option>			
                     <option value="LS-L-1976-04-09-V">LS-L-1976-04-09-V</option>
                     <option value="UY-E-1785-04-10-R">UY-E-1785-04-10-R</option>
@@ -65,20 +70,22 @@
             </p>
         </fieldset>
 
-        <fieldset>
+        <fieldset class="job_apply_page">
             <legend>Availability</legend>
             <p><label for="availability">Availability</label> <!-- Drop down selection listy-->
                 <select name="availability" id="availability" required>
+                    <option value="">Select an Option</option>
                     <option value="Full-time">Full-time</option>			
                     <option value="Part-time">Part-time</option>
                     <option value="Casual">Casual</option>
                 </select>
             </p>
         </fieldset>
-        <fieldset>
+        <fieldset class="job_apply_page grey_content_section">
             <legend>Work Rights</legend>
             <p><label for="workrights">Work Rights</label> 
                 <select name="workrights" id="workrights" required> <!-- Drop down selection listy-->
+                    <option value="">Select an Option</option>
                     <option value="Citizen">Citizen</option>			
                     <option value="Permanent Resident">Permanent Resident</option>
                     <option value="Temporary Visa">Temporary Visa</option>
@@ -86,13 +93,13 @@
             </p>
         </fieldset>
 
-        <fieldset>
+        <fieldset class="job_apply_page">
         <legend>Dat of Birth</legend>
         <p><label for="d">Date</label> 
-            <input type="date" name= "d" id="d" placeholder="dd-mm-yyyy" maxlength="10" size="10" required/>
+            <input type="date" name= "d" id="d" placeholder="dd-mm-yyyy"  required/>
         </fieldset>
 
-        <fieldset>
+        <fieldset class="job_apply_page grey_content_section">
             <legend>Location</legend>
             <p><label for="Address">Street Address</label> 
                 <!--Use an HTML5 email control -->
@@ -103,10 +110,11 @@
               <input type="text" name= "suburb" id="suburb" maxlength="40" required/>
             </p>
             </fieldset>
-            <fieldset>
+            <fieldset class="job_apply_page">
                 <legend>State</legend>
                 <p><label for="state">State</label> 
                     <select name="state" id="state" required> <!-- Drop down selection listy-->
+                        <option value="">Select an Option</option>
                         <option value="VIC">VIC</option>			
                         <option value="NSW">NSW</option>
                         <option value="QLD">QLD</option>
@@ -119,14 +127,14 @@
                 </p>
             </fieldset>
 
-            <fieldset>
+            <fieldset class="job_apply_page grey_content_section">
                 <legend>Postcode</legend>
                 <p><label for="postcode">Postcode</label> 
                     <!--Use an HTML5 email control -->
-                  <input type="text" name= "postcode" id="postcode" maxlength="4" required/> <!--Allows only 4 characters to be input-->
+                  <input type="text" name= "postcode" id="postcode" maxlength="4"  placeholder="0000-9999" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" required/> <!--Allows only 4 characters to be input-->
                 </p>
                 </fieldset>
-                <fieldset>
+                <fieldset class="job_apply_page">
                     <legend>Contact Details</legend>
                     <p><label for="email">Email</label> 
                         <!--Use an HTML5 email control -->
@@ -134,27 +142,71 @@
                     </p>
                     <p><label for="phone">Phone Number</label> 
                         <!--Use an HTML5 email control -->
-                      <input type="tel" name= "phone" id="phone" maxlength="10" required/>
+                      <input type="text" name= "phone" id="phone" maxlength="10" required oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" required/> <!--Allows only 10 characters to be input-->
                     </p>
                     </fieldset>
-                    <fieldset>
+                    <fieldset class="job_apply_page grey_content_section">
                         <legend>Other Skills</legend>
-                        <p><label for="other">List any other skills you have</label> 
+                        <p><label for="description">List any other skills you have</label> 
                             <!--Use an HTML5 email control -->
-                          <input type="text" name= "other" id="other" size="150" maxlength="150"/>
+                            <textarea name= "description" id="description" rows="4" cols="40"></textarea>
                         </p>
                     </fieldset>
       
-    <input type= "submit" value="Register"/>
-    <input type= "reset" value="Reset Form"/>
+    <input type= "Submit" value="Apply" class="job_apply_button"/>
+    <input type= "Reset" value="Reset" class="job_apply_button"/>
     
-    </form>
-    
-        <!--Footer with Jira link-->
-        <footer>
-            <a href="https://hjdj2025swin.atlassian.net/jira/software/projects/SCRUM/boards/1/backlog?atlOrigin=eyJpIjoiNTNmYmIyMzMyZDlhNGJhNzllODI0YTMyNmJkMWEzNDEiLCJwIjoiaiJ9">
-              Jira Project
-            </a>
-          </footer>
+    <A HREF="javascript:javascript:history.go(-1)" class="job_apply_button">Back</A>
+
+</form>
+</main>
+         <!--This is The Footer -->
+         <div class="footer">
+            <!-- Jira link-->
+            <div class="logofooter">
+                <img src="/images/image1.jpg" alt="HJDJ Logo"/>
+            </div>
+      
+            <div class="objfooter">
+                <h3>Contact</h3>
+                <div class="link">
+                    <a href="https://hjdj2025swin.atlassian.net/jira/software/projects/SCRUM/boards/1/backlog?atlOrigin=eyJpIjoiNTNmYmIyMzMyZDlhNGJhNzllODI0YTMyNmJkMWEzNDEiLCJwIjoiaiJ9">Jira Project</a>
+                </div>
+                <div class="email">
+                    <p>Email:</p>
+                    <a href="mailto:someone@example.com">HJDJcarrier@hjdj.com.au</a>
+                </div>
+                <div class="megaphonetelephone">
+                    <p>Tel: 408-486-1405</p>
+                </div>
+            </div>
+            
+            <div class="objfooter">
+                <h3>Company</h3>
+                <div class="link">
+                    <p>About us</p>
+                </div>
+                <div class="email">
+                    <p>Event</p>
+                </div>
+                <div class="megaphonetelephone">
+                    <p>Terms and conditions</p>
+                </div>
+            </div>
+
+            <div class="objfooter">
+                <h3>Follow Us</h3>
+                <div class="link">
+                    <p>Facebook</p>
+                </div>
+                <div class="email">
+                    <p>Instagram</p>
+                </div>
+                <div class="megaphonetelephone">
+                    <p>Twitter</p>
+                </div>
+            </div>
+        </div>
+        <!-- End Of Footer -->
 </body>
 </html>
