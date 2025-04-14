@@ -11,6 +11,7 @@
 
 </head>
 
+<body>
 <header>
     <h1>HJDJ</h1>
     <!-- Site navigation -->
@@ -24,7 +25,7 @@
     </nav>
 </header>
 
-<body>
+
 
 
 <form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
@@ -56,6 +57,7 @@
             <legend>Job Listing</legend>
             <p><label for="referencenumber">Job refernce number</label> 
                 <select name="referencenumber" id="referencenumber" required> <!-- Drop down selection listy-->
+                    <option value="">Select an Option</option> <!--Placeholder option must be added when select list is required-->
                     <option value="WC-R-1398-03-06-S">WC-R-1398-03-06-S</option>			
                     <option value="LS-L-1976-04-09-V">LS-L-1976-04-09-V</option>
                     <option value="UY-E-1785-04-10-R">UY-E-1785-04-10-R</option>
@@ -69,6 +71,7 @@
             <legend>Availability</legend>
             <p><label for="availability">Availability</label> <!-- Drop down selection listy-->
                 <select name="availability" id="availability" required>
+                    <option value="">Select an Option</option>
                     <option value="Full-time">Full-time</option>			
                     <option value="Part-time">Part-time</option>
                     <option value="Casual">Casual</option>
@@ -79,6 +82,7 @@
             <legend>Work Rights</legend>
             <p><label for="workrights">Work Rights</label> 
                 <select name="workrights" id="workrights" required> <!-- Drop down selection listy-->
+                    <option value="">Select an Option</option>
                     <option value="Citizen">Citizen</option>			
                     <option value="Permanent Resident">Permanent Resident</option>
                     <option value="Temporary Visa">Temporary Visa</option>
@@ -89,7 +93,7 @@
         <fieldset>
         <legend>Dat of Birth</legend>
         <p><label for="d">Date</label> 
-            <input type="date" name= "d" id="d" placeholder="dd-mm-yyyy" maxlength="10" size="10" required/>
+            <input type="text" name= "d" id="d" placeholder="dd-mm-yyyy" size="10" required/>
         </fieldset>
 
         <fieldset>
@@ -107,6 +111,7 @@
                 <legend>State</legend>
                 <p><label for="state">State</label> 
                     <select name="state" id="state" required> <!-- Drop down selection listy-->
+                        <option value="">Select an Option</option>
                         <option value="VIC">VIC</option>			
                         <option value="NSW">NSW</option>
                         <option value="QLD">QLD</option>
