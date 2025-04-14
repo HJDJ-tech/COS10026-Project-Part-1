@@ -34,8 +34,7 @@ body {
   }
 /* Format all header options */
 h1 {
-    font-size: 2em;
-    font-weight: bold;
+    font: 2em Arial, sans-serif bold;
 }
   
 h2 {
