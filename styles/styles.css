@@ -424,22 +424,58 @@ footer p {
 /* STYLING FOR ABOUT PAGE */
   
 /* Table styling */
-table,
-th,
-td {
-    border: 1px solid black;
-    text-align: center;
-}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 2%;
+  }
   
-td,
-th {
-    background-color: #e1e1e1;
-}
+  /* Table header */
+  caption {
+    margin-top: 2%;
+    margin-top: 2%;
+    font-size: 20px;
+  }
+  thead tr {
+    background-color: #000000; 
+    color: white;
+  }
+  .wordcolor {
+    color: white;
+  }
+  th, td {
+    padding: 12px 15px;
+    text-align: left;
   
-td:hover {
-    color: darkblue;
-    background-color: lightblue;
-}
+  }
+  thead th {
+    color:white;
+  }
+  /* Zebra striping */
+  tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+  }
+  
+  /* Hover effect (optional) */
+  tbody tr:hover {
+    background-color: #ececec;
+    cursor: default;
+  }
+  
+  /* Rounded top corners (if needed) */
+  thead tr:first-child th:first-child {
+    border-top-left-radius: 8px;
+  }
+  thead tr:first-child th:last-child {
+    border-top-right-radius: 8px;
+  }
   
 /*Figure team photo styling */
 #team_photo {  
