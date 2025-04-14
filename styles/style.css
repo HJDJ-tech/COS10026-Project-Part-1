@@ -488,32 +488,6 @@ dd {
     grid-column: 3;
 }
 
-/* Format <a> tag to look like a button */
-.job_apply_button {
-    display: flex;
-    text-decoration: none;
-    font-size: 14px;
-    align-items: center;
-    justify-content: center;
-    background-color: #ce0505;
-    border: 1px solid black;
-    border-radius: 5px;
-    height: 3em;
-    width: 8em;
-    margin-top: 20px;
-    color: white;
-}
-
-/* Change colour of button on hover */
-.job_apply_button:hover {
-    background-color: #b51111;
-}
-
-/* Change colour of button on click */
-.job_apply_button:active {
-  background-color: #ce0505;
-}
-
 .center_heading {
     text-align: center;
 }
@@ -526,6 +500,10 @@ dd {
     margin-bottom: 2em;
     width: 100%;
     min-width: 30em;
+}
+
+#jobs_page_footer {
+    min-width: 650px;
 }
 
 input {
