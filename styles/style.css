@@ -1,3 +1,16 @@
+/*
+
+filename: style.css
+
+author: Harry Lamb, Josh Trapman, Diesel Williams, Jerry Nguyen
+
+created: 2/04/2025
+
+last modified: 14/04/2025
+description: Refers to index.html, jobs.html, apply.html and about.html
+
+*/
+
 /* Set Default font for all text */
 * {
     font-family: arial;
@@ -522,7 +535,7 @@ dd {
     background-color: lightgrey;
 }
 
-/*  */
+/* Adding images to the background of each job position */
 #data_analyst {
     background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("/images/data-analyst.png");
     background-size: cover;
