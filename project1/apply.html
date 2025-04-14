@@ -34,7 +34,7 @@
 <form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
         <!--Note we have to use a special escape character to print an apostrophe on the Web page -->
         <fieldset class="job_apply_page grey_content_section">
-        <legend>Full Name</legend>
+        <legend class="legend_2">Full Name</legend>
         <p><label for="given">Given Name</label> 
             <!--Use an HTML5 email control -->
           <input type="text" name= "given" id="given" maxlength="20" required/>
@@ -57,7 +57,7 @@
             </p>
         </fieldset>
         <fieldset class="job_apply_page grey_content_section">
-            <legend>Job Listing</legend>
+            <legend class="legend_2">Job Listing</legend>
             <p><label for="referencenumber">Job refernce number</label> 
                 <select name="referencenumber" id="referencenumber" required> <!-- Drop down selection listy-->
                     <option value="">Select an Option</option> <!--Placeholder option must be added when select list is required-->
@@ -82,7 +82,7 @@
             </p>
         </fieldset>
         <fieldset class="job_apply_page grey_content_section">
-            <legend>Work Rights</legend>
+            <legend class="legend_2">Work Rights</legend>
             <p><label for="workrights">Work Rights</label> 
                 <select name="workrights" id="workrights" required> <!-- Drop down selection listy-->
                     <option value="">Select an Option</option>
@@ -100,7 +100,7 @@
         </fieldset>
 
         <fieldset class="job_apply_page grey_content_section">
-            <legend>Location</legend>
+            <legend class="legend_2">Location</legend>
             <p><label for="Address">Street Address</label> 
                 <!--Use an HTML5 email control -->
               <input type="text" name= "Adress" id="Address" maxlength="40" required/>
@@ -128,7 +128,7 @@
             </fieldset>
 
             <fieldset class="job_apply_page grey_content_section">
-                <legend>Postcode</legend>
+                <legend class="legend_2">Postcode</legend>
                 <p><label for="postcode">Postcode</label> 
                     <!--Use an HTML5 email control -->
                   <input type="text" name= "postcode" id="postcode" maxlength="4"  placeholder="0000-9999" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" required/> <!--Allows only 4 characters to be input-->
@@ -146,7 +146,7 @@
                     </p>
                     </fieldset>
                     <fieldset class="job_apply_page grey_content_section">
-                        <legend>Other Skills</legend>
+                        <legend class="legend_2">Other Skills</legend>
                         <p><label for="description">List any other skills you have</label> 
                             <!--Use an HTML5 email control -->
                             <textarea name= "description" id="description" rows="4" cols="40"></textarea>
