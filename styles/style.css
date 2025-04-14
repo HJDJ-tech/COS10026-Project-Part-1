@@ -625,3 +625,46 @@ input[type=date]:focus {
 input[type=date]:focus {
     border: 3px solid #555;
 }
+
+fieldset {
+    margin: 2em 0;
+    padding: 1em 2em;
+    border: solid 1px #ccc;
+    border-radius: 6px;
+    min-width: 200px;
+}
+
+legend {
+    font-size: 1.25em;
+    padding: 0.25em;
+    color: #999;
+}
+
+label {
+    display: block;
+    margin-top: 1em;
+}
+
+label:first-of-type {
+    margin-top: 0;
+}
+
+.legend_2 {
+    font-size: 1.25em;
+    padding: 0.25em;
+    color: black;
+}
+
+.legend_2 {
+    color: black;
+    padding: 5px 10px;
+}
+
+.legend_2 {
+    display: block;
+    padding-left: 2px;
+    padding-right: 2px;
+    border: none;
+    text-transform: uppercase;
+}
+
