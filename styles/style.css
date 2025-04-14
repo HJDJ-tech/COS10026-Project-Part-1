@@ -587,3 +587,41 @@ input[type=email]:focus {
     border: 3px solid #555;
 }
 
+legend {
+    color: black;
+    padding: 5px 10px;
+}
+
+legend {
+    display: block;
+    padding-left: 2px;
+    padding-right: 2px;
+    border: none;
+    text-transform: uppercase;
+}
+
+input[type=date] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type=date] {
+    border: 2px black;
+    border-radius: 4px;
+}
+
+input[type=date] {
+    background-color:darkgray;
+    color: white;
+}
+
+input[type=date]:focus {
+    background-color:black;
+}
+
+input[type=date]:focus {
+    border: 3px solid #555;
+}

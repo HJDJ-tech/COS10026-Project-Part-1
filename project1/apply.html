@@ -96,7 +96,7 @@
         <fieldset class="job_apply_page">
         <legend>Dat of Birth</legend>
         <p><label for="d">Date</label> 
-            <input type="text" name= "d" id="d" placeholder="dd-mm-yyyy" size="10" required/>
+            <input type="date" name= "d" id="d" placeholder="dd-mm-yyyy"  required/>
         </fieldset>
 
         <fieldset class="job_apply_page grey_content_section">
@@ -149,13 +149,15 @@
                         <legend>Other Skills</legend>
                         <p><label for="description">List any other skills you have</label> 
                             <!--Use an HTML5 email control -->
-                            <textarea name= "description" id="description" rows="4" cols="40" required="required"></textarea>
+                            <textarea name= "description" id="description" rows="4" cols="40"></textarea>
                         </p>
                     </fieldset>
       
     <input type= "Submit" value="Apply" class="job_apply_button"/>
     <input type= "Reset" value="Reset" class="job_apply_button"/>
     
+    <A HREF="javascript:javascript:history.go(-1)" class="job_apply_button">Back</A>
+
 </form>
 </main>
          <!--This is The Footer -->
