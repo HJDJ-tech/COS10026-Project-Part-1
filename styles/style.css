@@ -517,7 +517,45 @@ dd {
 
 .grey_content_section {
     padding: 30px 0;
+    border-bottom: 4px solid #1e1e1e;
+    border-top: 4px solid #1e1e1e;
     background-color: lightgrey;
+}
+
+/*  */
+#data_analyst {
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("/images/data-analyst.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#software_engineer {
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("/images/software_engineer.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+#ux_designer {
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("/images/ux_designer.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+#it_support {
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("/images/it_support.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+#cybersecurity_analyst {
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("/images/cybersecurity.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
 }
 
 #aside_container {
@@ -617,6 +655,33 @@ dd {
     min-width: 650px;
 }
 
+/* Format <a> tag to look like a button */
+.job_apply_button {
+    display: flex;
+    text-decoration: none;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    background-color: #ce0505;
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 3em;
+    width: 8em;
+    margin-top: 20px;
+    color: white;
+}
+
+/* Change colour of button on hover */
+.job_apply_button:hover {
+    background-color: #b51111;
+}
+
+/* Change colour of button on click */
+.job_apply_button:active {
+    background-color: #ce0505;
+}
+
+/* STYLING FOR APPLY PAGE */
 input {
     width: 100%;
 }
