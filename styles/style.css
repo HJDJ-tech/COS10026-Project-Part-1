@@ -1,3 +1,16 @@
+/*
+
+filename: style.css
+
+author: Harry Lamb, Josh Trapman, Diesel Williams, Jerry Nguyen
+
+created: 2/04/2025
+
+last modified: 14/04/2025
+description: Refers to index.html, jobs.html, apply.html and about.html
+
+*/
+
 /* Set Default font for all text */
 * {
     font-family: arial;
@@ -522,7 +535,7 @@ dd {
     background-color: lightgrey;
 }
 
-/*  */
+/* Adding images to the background of each job position */
 #data_analyst {
     background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("/images/data-analyst.png");
     background-size: cover;
@@ -531,7 +544,7 @@ dd {
 }
 
 #software_engineer {
-    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("/images/software_engineer.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/software_engineer.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat; 
@@ -545,7 +558,7 @@ dd {
 }
 
 #it_support {
-    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("/images/it_support.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/it_support.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat; 
@@ -571,10 +584,6 @@ dd {
     min-width: fit-content;
     padding: 0 2em;
 }    
-
-.white_text {
-    color: white;
-}
 
 #aside_list li {
     margin-bottom: 10px;
